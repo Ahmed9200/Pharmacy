@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Pharmacy</string>
+    <string name="govName">اختر المحافظه</string>
+    <string name="citiesName">اختر المدينه</string>
+    <string name="intro">\"صيدلتى هو أول موقع يساعدك علي ايجاد الدواء الذي تحتاجه ويخبرك بالصيدليات المتاح بها ويرشدك لأقرب صيدلية من بيتك يتواجد فيها مع عرض سعر الدواء\"</string>
+    <string name="governorateName">المحافظه :</string>
+    <string name="cityName_ar">المدينه :</string>
+    <string name="address">العنوان :</string>
+    <string name="pharmacy">pharmacy</string>
+    <string name="ph_address">العنوان :</string>
+    <string name="ph_near">أقرب معلم :</string>
+    <string name="ph_phone">رقم الهاتف :</string>
+    <string name="todo">TODO</string>
+    <string name="online_pharmacy_txt">Online Pharmacy</string>
+    <string name="thanks">Thanks</string>
+
+    <!--    <string name="dialog_message">من فضلك قم بادخال البيانات كامله وصحيحه</string>-->
+    <!--    <string name="dialog_title">انتبه من فضلك</string>-->
+</resources>

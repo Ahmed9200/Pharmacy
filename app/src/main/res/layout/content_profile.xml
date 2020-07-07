@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ProfileActivity"
+    tools:showIn="@layout/activity_profile"
+    android:background="@color/whiteTextColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Account_Info"
+            style="@style/headerText"
+            android:layout_marginBottom="20dp"
+            android:text="Account Info"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:id="@+id/nameImageView"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/pharmacy_name" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/nameImageView"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/pharmName_txt"
+                style="@style/profileDetailsMiniText"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/nameImageView"
+                android:text="developer" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pharmName_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/nameImageView"
+                android:visibility="gone"
+                />
+
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:id="@+id/mobileImageView"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/phone" />
+
+            <TextView
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/mobileImageView"
+                android:text="Mobile" />
+
+            <TextView
+                android:id="@+id/pharmPhone_txt"
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/mobileImageView"
+                android:text="+91-8129999999" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pharmPhone_et"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/mobileImageView"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:id="@+id/emailImageView"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/email" />
+
+            <TextView
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/emailImageView"
+                android:text="Email" />
+
+            <TextView
+                android:id="@+id/pharmEmail_txt"
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/emailImageView"
+                android:text="developer@appsnipp.com" />
+
+            <EditText
+                android:id="@+id/pharmEmail_et"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/emailImageView"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:id="@+id/addressImageView"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/address" />
+
+            <TextView
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/addressImageView"
+                android:text="Address" />
+
+            <TextView
+                android:id="@+id/pharmAddress_txt"
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/addressImageView"
+                android:text="Avenue 2nd Street NW SY." />
+
+            <EditText
+                android:id="@+id/pharmAddress_et"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/addressImageView"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:id="@+id/near_to_Image"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/ic_nearto" />
+
+            <TextView
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/near_to_Image"
+                android:text="Near To " />
+
+            <TextView
+                android:id="@+id/pharmNearTo_txt"
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/near_to_Image"
+                android:text="12-05-1990" />
+
+            <EditText
+                android:id="@+id/pharmNearTo_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/near_to_Image"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:id="@+id/gover_Image"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/ic_governorate" />
+
+            <TextView
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/gover_Image"
+                android:text="Governorate" />
+
+            <TextView
+                android:id="@+id/govs_txt"
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/gover_Image"
+                android:text="Elmeofia" />
+            <Spinner
+                android:id="@+id/pharmGov_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/gover_Image"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_weight="2"/>
+
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:id="@+id/city_Image"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/ic_city" />
+
+            <TextView
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/city_Image"
+                android:text="City" />
+
+            <TextView
+                android:id="@+id/cities_txt"
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/city_Image"
+                android:text="Elmeofia" />
+            <Spinner
+                android:id="@+id/pharmCity_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/city_Image"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_weight="2"/>
+
+<!--            <EditText-->
+<!--                android:id="@+id/pharmCity_et"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_toRightOf="@id/city_Image"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:visibility="gone" />-->
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <Button
+            android:id="@+id/update_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cpb_blue_dark"
+            android:textSize="20sp"
+            android:text="Update"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+
+        <com.github.florent37.expansionpanel.ExpansionHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="5dp"
+            android:minWidth="250dp"
+            android:background="@drawable/profile_back_button"
+            app:expansion_headerIndicator="@id/headerIndicator"
+            app:expansion_layout="@id/expansionLayout"
+
+            app:expansion_toggleOnClick="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="7dp"
+                android:text="Show Medicine List"
+                android:textSize="25dp" />
+
+            <ImageView
+
+                android:id="@+id/headerIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="16dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+        </com.github.florent37.expansionpanel.ExpansionHeader>
+
+        <com.github.florent37.expansionpanel.ExpansionLayout
+            android:id="@+id/expansionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="25dp"
+            android:textAlignment="center"
+            app:expansion_expanded="false" />
+
+        <View style="@style/proifleDetailsView" />
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
